@@ -5,3 +5,12 @@ git add *
 git commit -m "Initial Commit" -a
 git remote add origin origin https://github.com/oligarx077/Kurs-valyut-bot.git #Указываем свою ссылку
 git push -u origin master
+
+heroku uzmobi3@gmail.com 4557841001Oligarx_uz #Вводим email и пароль
+heroku create --region eu kursvalyutbot #Не забываемпоменять имя приложения
+#P.S. в имени могут быть только буквы в нижнем регитсре, цифры  и тире.
+heroku addons:create heroku-redis:hobby-dev -a habrparserbot #И снова меняем имя!
+heroku buildpacks:set heroku/python
+git push heroku master
+heroku ps:scale bot=1 # запускаем бота
+heroku logs --tail #включаем логи
