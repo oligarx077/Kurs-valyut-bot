@@ -3,7 +3,7 @@ from telebot import types
 import kurs
 
 # Создаем экземпляр  TelegramBot
-bot = telebot.TeleBot('Telegram_bot_API_key')
+bot = telebot.TeleBot('5692949539:AAGEaBdiV_7-p5b_2nuZJUhjXGxPIEK62ec')
 
 
 class ConvertionException(Exception):
