@@ -1,0 +1,7 @@
+echo "# Kurs-valyut-bot" >> README.md
+git init
+git add .
+git add *
+git commit -m "Initial Commit" -a
+git remote add origin origin https://github.com/oligarx077/Kurs-valyut-bot.git #Указываем свою ссылку
+git push -u origin master
